@@ -42,18 +42,32 @@ jobs:
           chmod +x gradlew
           ./gradlew assembleDebug --no-daemon --stacktrace 2>&1 | tee ../gradle-build.log
           
-          # Create root-level artifacts directory and copy the APK
+          # Find the generated APK
+          APK_FILE=$(find . -name "*.apk" | head -n 1)
+          echo "=== FOUND APK: $APK_FILE ==="
+          
+          # Copy to multiple standard paths
           mkdir -p $GITHUB_WORKSPACE/artifacts
-          find . -type f -name "*.apk" -exec cp {} $GITHUB_WORKSPACE/artifacts/ShreeJeeKirana.apk \;
-          echo "=== COPIED APK TO $GITHUB_WORKSPACE/artifacts/ ==="
-          ls -la $GITHUB_WORKSPACE/artifacts/
+          mkdir -p ../artifacts
+          cp "$APK_FILE" $GITHUB_WORKSPACE/artifacts/ShreeJeeKirana.apk
+          cp "$APK_FILE" ../artifacts/ShreeJeeKirana.apk
+          cp "$APK_FILE" $GITHUB_WORKSPACE/ShreeJeeKirana.apk
+          
+          echo "## Android APK Build Succeeded!" >> $GITHUB_STEP_SUMMARY
+          echo "- Source APK: \`$APK_FILE\`" >> $GITHUB_STEP_SUMMARY
+          echo '```text' >> $GITHUB_STEP_SUMMARY
+          ls -lh $GITHUB_WORKSPACE/artifacts/ShreeJeeKirana.apk >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
 
       - name: Upload Android APK
         uses: actions/upload-artifact@v4
         with:
           name: ShreeJeeKirana-Android-APK
-          path: artifacts/ShreeJeeKirana.apk
-          if-no-files-found: error
+          path: |
+            artifacts/ShreeJeeKirana.apk
+            mobile/artifacts/ShreeJeeKirana.apk
+            ShreeJeeKirana.apk
+            mobile/android/app/build/outputs/apk/debug/app-debug.apk
 
       - name: Create or Update GitHub Release
         uses: softprops/action-gh-release@v2
@@ -74,7 +88,10 @@ jobs:
             2. Open the downloaded file from your notifications or Downloads folder.
             3. Tap **Install** (if prompted, enable "Install unknown apps" for your browser).
             4. Launch **Shree Jee Kirana** and test browsing, cart, and UPI checkout!
-          files: artifacts/ShreeJeeKirana.apk
+          files: |
+            artifacts/ShreeJeeKirana.apk
+            mobile/artifacts/ShreeJeeKirana.apk
+            ShreeJeeKirana.apk
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -83,7 +100,13 @@ jobs:
         run: |
           echo "## Gradle Failure Logs" >> $GITHUB_STEP_SUMMARY
           echo '```text' >> $GITHUB_STEP_SUMMARY
-          tail -n 120 ../gradle-build.log >> $GITHUB_STEP_SUMMARY
+          if [ -f ../gradle-build.log ]; then
+            tail -n 120 ../gradle-build.log >> $GITHUB_STEP_SUMMARY
+          elif [ -f gradle-build.log ]; then
+            tail -n 120 gradle-build.log >> $GITHUB_STEP_SUMMARY
+          else
+            echo "No gradle-build.log found" >> $GITHUB_STEP_SUMMARY
+          fi
           echo '```' >> $GITHUB_STEP_SUMMARY
 
   build-ios:
