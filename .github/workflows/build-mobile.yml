@@ -38,12 +38,15 @@ jobs:
           cd android
           chmod +x gradlew
           ./gradlew assembleDebug --no-daemon --stacktrace 2>&1 | tee ../gradle-build.log
+          echo "=== FOUND APKS ==="
+          find app/build/outputs -name "*.apk"
 
       - name: Upload Android APK
         uses: actions/upload-artifact@v4
         with:
           name: ShreeJeeKirana-Android-Debug
-          path: mobile/android/app/build/outputs/apk/debug/app-debug.apk
+          path: mobile/android/app/build/outputs/apk/**/*.apk
+          if-no-files-found: error
 
       - name: Dump Failure Log to Summary
         if: failure()
