@@ -1,0 +1,16 @@
+{
+  "name": "Shree Jee Kirana",
+  "short_name": "Shree Jee",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#15803d",
+  "description": "Shree Jee Kirana - Lal Bagh, Nathdwara",
+  "icons": [
+    {
+      "src": "https://api.iconify.design/emojione:convenience-store.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
