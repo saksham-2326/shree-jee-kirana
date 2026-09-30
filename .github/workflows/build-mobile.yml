@@ -7,6 +7,9 @@ on:
     branches: [ main, master ]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build-android:
     name: Build Android APK
@@ -38,24 +41,50 @@ jobs:
           cd android
           chmod +x gradlew
           ./gradlew assembleDebug --no-daemon --stacktrace 2>&1 | tee ../gradle-build.log
-          echo "=== FOUND APKS ==="
-          find app/build/outputs -name "*.apk"
+          
+          # Create root-level artifacts directory and copy the APK
+          mkdir -p $GITHUB_WORKSPACE/artifacts
+          find . -type f -name "*.apk" -exec cp {} $GITHUB_WORKSPACE/artifacts/ShreeJeeKirana.apk \;
+          echo "=== COPIED APK TO $GITHUB_WORKSPACE/artifacts/ ==="
+          ls -la $GITHUB_WORKSPACE/artifacts/
 
       - name: Upload Android APK
         uses: actions/upload-artifact@v4
         with:
-          name: ShreeJeeKirana-Android-Debug
-          path: mobile/android/app/build/outputs/apk/**/*.apk
+          name: ShreeJeeKirana-Android-APK
+          path: artifacts/ShreeJeeKirana.apk
           if-no-files-found: error
+
+      - name: Create or Update GitHub Release
+        uses: softprops/action-gh-release@v2
+        if: github.ref == 'refs/heads/main'
+        with:
+          tag_name: v1.0.0
+          name: "Shree Jee Kirana v1.0.0 (Android APK)"
+          body: |
+            ## Shree Jee Kirana - Customer Mobile App (v1.0.0)
+            
+            **Store Details:**
+            - **Store**: Shree Jee Kirana
+            - **Address**: Lal Bagh, Kothariya Road, Nathdwara, Rajasthan 313301
+            - **Contact**: 9079192291
+            
+            ### 📱 Download & Install Instructions for Android:
+            1. Click **`ShreeJeeKirana.apk`** below to download directly to your mobile phone.
+            2. Open the downloaded file from your notifications or Downloads folder.
+            3. Tap **Install** (if prompted, enable "Install unknown apps" for your browser).
+            4. Launch **Shree Jee Kirana** and test browsing, cart, and UPI checkout!
+          files: artifacts/ShreeJeeKirana.apk
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Dump Failure Log to Summary
         if: failure()
         run: |
           echo "## Gradle Failure Logs" >> $GITHUB_STEP_SUMMARY
           echo '```text' >> $GITHUB_STEP_SUMMARY
-          tail -n 120 gradle-build.log >> $GITHUB_STEP_SUMMARY
+          tail -n 120 ../gradle-build.log >> $GITHUB_STEP_SUMMARY
           echo '```' >> $GITHUB_STEP_SUMMARY
-
 
   build-ios:
     name: Build iOS App
