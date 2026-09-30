@@ -30,9 +30,11 @@ mobile/android/app/build/
 mobile/android/.gradle/
 mobile/android/build/
 mobile/android/app/*.keystore
+!mobile/android/app/debug.keystore
 mobile/android/app/*.jks
 mobile/android/app/google-services.json
 *.keystore
+!mobile/android/app/debug.keystore
 *.jks
 
 # iOS
