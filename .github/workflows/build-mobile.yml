@@ -36,12 +36,12 @@ jobs:
       - name: Install Node Dependencies
         run: npm install --legacy-peer-deps
 
-      - name: Build Android Debug APK
+      - name: Build Android Release APK
         run: |
           set -o pipefail
           cd android
           chmod +x gradlew
-          ./gradlew assembleDebug --no-daemon --stacktrace 2>&1 | tee ../gradle-build.log
+          ./gradlew assembleRelease --no-daemon --stacktrace 2>&1 | tee ../gradle-build.log
           
           # Find the generated APK
           APK_FILE=$(find . -name "*.apk" | head -n 1)
@@ -67,7 +67,7 @@ jobs:
             artifacts/ShreeJeeKirana.apk
             mobile/artifacts/ShreeJeeKirana.apk
             ShreeJeeKirana.apk
-            mobile/android/app/build/outputs/apk/debug/app-debug.apk
+            mobile/android/app/build/outputs/apk/release/app-release.apk
 
       - name: Create or Update GitHub Release
         uses: softprops/action-gh-release@v2
