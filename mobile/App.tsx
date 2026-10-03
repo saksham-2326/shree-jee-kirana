@@ -12,24 +12,28 @@ export default function App() {
 
   useEffect(() => {
     // Listen for auth state changes (sign-in, token refresh, sign-out)
-    const {
-      data: { subscription },
-    } = supabase.auth.onAuthStateChange(async (event, session) => {
-      if (session?.user) {
-        try {
-          const profile = await authService.getProfile(session.user.id);
-          setSession(session.user, profile);
-        } catch {
-          setSession(session.user, null);
+    try {
+      const {
+        data: { subscription },
+      } = supabase.auth.onAuthStateChange(async (event, session) => {
+        if (session?.user) {
+          try {
+            const profile = await authService.getProfile(session.user.id);
+            setSession(session.user, profile);
+          } catch {
+            setSession(session.user, null);
+          }
+        } else {
+          clearSession();
         }
-      } else {
-        clearSession();
-      }
-    });
+      });
 
-    return () => {
-      subscription.unsubscribe();
-    };
+      return () => {
+        subscription?.unsubscribe?.();
+      };
+    } catch {
+      // Safe fallback if network/auth is unreachable at launch
+    }
   }, [setSession, clearSession]);
 
   return (
