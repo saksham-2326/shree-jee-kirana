@@ -73,10 +73,10 @@ jobs:
         uses: softprops/action-gh-release@v2
         if: github.ref == 'refs/heads/main'
         with:
-          tag_name: v1.0.0
-          name: "Shree Jee Kirana v1.0.0 (Android APK)"
+          tag_name: v1.0.1
+          name: "Shree Jee Kirana v1.0.1 (Production Standalone APK)"
           body: |
-            ## Shree Jee Kirana - Customer Mobile App (v1.0.0)
+            ## Shree Jee Kirana - Customer Mobile App (v1.0.1 Standalone Production)
             
             **Store Details:**
             - **Store**: Shree Jee Kirana
