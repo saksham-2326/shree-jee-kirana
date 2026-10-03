@@ -1,0 +1,532 @@
+Downloading https://services.gradle.org/distributions/gradle-8.3-all.zip
+...................10%...................20%...................30%...................40%...................50%...................60%...................70%...................80%...................90%...................100%
+
+Welcome to Gradle 8.3!
+
+Here are the highlights of this release:
+ - Faster Java compilation
+ - Reduced memory usage
+ - Support for running on Java 20
+
+For more details see https://docs.gradle.org/8.3/release-notes.html
+
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :gradle-plugin:pluginDescriptors
+> Task :gradle-plugin:processResources
+> Task :gradle-plugin:compileKotlin
+> Task :gradle-plugin:compileJava NO-SOURCE
+> Task :gradle-plugin:classes
+> Task :gradle-plugin:jar
+> Task :gradle-plugin:inspectClassesForKotlinIC
+Checking the license for package Android SDK Build-Tools 33.0.1 in /usr/local/lib/android/sdk/licenses
+License for package Android SDK Build-Tools 33.0.1 accepted.
+Preparing "Install Android SDK Build-Tools 33.0.1 v.33.0.1".
+"Install Android SDK Build-Tools 33.0.1 v.33.0.1" ready.
+Installing Android SDK Build-Tools 33.0.1 in /usr/local/lib/android/sdk/build-tools/33.0.1
+"Install Android SDK Build-Tools 33.0.1 v.33.0.1" complete.
+"Install Android SDK Build-Tools 33.0.1 v.33.0.1" finished.
+> Task :react-native-async-storage_async-storage:preBuild UP-TO-DATE
+> Task :react-native-async-storage_async-storage:preReleaseBuild UP-TO-DATE
+> Task :react-native-async-storage_async-storage:mergeReleaseJniLibFolders
+> Task :react-native-async-storage_async-storage:mergeReleaseNativeLibs NO-SOURCE
+> Task :react-native-async-storage_async-storage:stripReleaseDebugSymbols NO-SOURCE
+> Task :react-native-async-storage_async-storage:copyReleaseJniLibsProjectAndLocalJars
+> Task :react-native-async-storage_async-storage:generateReleaseResValues
+> Task :react-native-async-storage_async-storage:extractDeepLinksForAarRelease
+> Task :react-native-async-storage_async-storage:generateReleaseBuildConfig
+> Task :react-native-async-storage_async-storage:generateReleaseResources
+> Task :react-native-async-storage_async-storage:packageReleaseResources
+> Task :react-native-async-storage_async-storage:javaPreCompileRelease
+> Task :react-native-async-storage_async-storage:mergeReleaseShaders
+> Task :react-native-async-storage_async-storage:compileReleaseShaders NO-SOURCE
+> Task :react-native-async-storage_async-storage:generateReleaseAssets UP-TO-DATE
+> Task :react-native-async-storage_async-storage:packageReleaseAssets
+> Task :react-native-async-storage_async-storage:prepareReleaseArtProfile
+> Task :react-native-async-storage_async-storage:prepareLintJarForPublish
+> Task :react-native-async-storage_async-storage:processReleaseJavaRes NO-SOURCE
+> Task :react-native-async-storage_async-storage:parseReleaseLocalResources
+> Task :react-native-community_netinfo:preBuild UP-TO-DATE
+> Task :react-native-community_netinfo:preReleaseBuild UP-TO-DATE
+> Task :react-native-community_netinfo:mergeReleaseJniLibFolders
+> Task :react-native-community_netinfo:mergeReleaseNativeLibs NO-SOURCE
+> Task :react-native-async-storage_async-storage:writeReleaseAarMetadata
+> Task :react-native-community_netinfo:stripReleaseDebugSymbols NO-SOURCE
+> Task :react-native-community_netinfo:copyReleaseJniLibsProjectAndLocalJars
+
+> Task :react-native-async-storage_async-storage:processReleaseManifest
+package="com.reactnativecommunity.asyncstorage" found in source AndroidManifest.xml: /home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/@react-native-async-storage/async-storage/android/src/main/AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="com.reactnativecommunity.asyncstorage" from the source AndroidManifest.xml: /home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/@react-native-async-storage/async-storage/android/src/main/AndroidManifest.xml.
+
+> Task :react-native-community_netinfo:generateReleaseResValues
+> Task :react-native-community_netinfo:extractDeepLinksForAarRelease
+> Task :react-native-async-storage_async-storage:mergeReleaseJavaResource
+> Task :react-native-community_netinfo:generateReleaseBuildConfig
+> Task :react-native-community_netinfo:generateReleaseResources
+> Task :react-native-community_netinfo:packageReleaseResources
+> Task :react-native-async-storage_async-storage:generateReleaseRFile
+> Task :react-native-community_netinfo:parseReleaseLocalResources
+
+> Task :react-native-community_netinfo:processReleaseManifest
+package="com.reactnativecommunity.netinfo" found in source AndroidManifest.xml: /home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/@react-native-community/netinfo/android/src/main/AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="com.reactnativecommunity.netinfo" from the source AndroidManifest.xml: /home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/@react-native-community/netinfo/android/src/main/AndroidManifest.xml.
+
+> Task :react-native-async-storage_async-storage:extractReleaseAnnotations
+
+> Task :react-native-async-storage_async-storage:compileReleaseJavaWithJavac
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/@react-native-async-storage/async-storage/android/src/javaPackage/java/com/reactnativecommunity/asyncstorage/AsyncStoragePackage.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+> Task :react-native-async-storage_async-storage:mergeReleaseGeneratedProguardFiles
+> Task :react-native-async-storage_async-storage:mergeReleaseConsumerProguardFiles
+> Task :react-native-async-storage_async-storage:syncReleaseLibJars
+> Task :react-native-async-storage_async-storage:bundleReleaseLocalLintAar
+> Task :react-native-community_netinfo:javaPreCompileRelease
+> Task :react-native-community_netinfo:mergeReleaseShaders
+> Task :react-native-community_netinfo:compileReleaseShaders NO-SOURCE
+> Task :react-native-community_netinfo:generateReleaseAssets UP-TO-DATE
+> Task :react-native-community_netinfo:generateReleaseRFile
+> Task :react-native-community_netinfo:packageReleaseAssets
+> Task :react-native-community_netinfo:extractReleaseAnnotations
+
+> Task :react-native-community_netinfo:compileReleaseJavaWithJavac
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :react-native-community_netinfo:mergeReleaseGeneratedProguardFiles
+> Task :react-native-community_netinfo:mergeReleaseConsumerProguardFiles
+> Task :react-native-community_netinfo:prepareLintJarForPublish
+> Task :react-native-community_netinfo:prepareReleaseArtProfile
+> Task :react-native-community_netinfo:processReleaseJavaRes NO-SOURCE
+> Task :react-native-safe-area-context:preBuild UP-TO-DATE
+> Task :react-native-safe-area-context:preReleaseBuild UP-TO-DATE
+> Task :react-native-community_netinfo:writeReleaseAarMetadata
+> Task :react-native-community_netinfo:mergeReleaseJavaResource
+> Task :react-native-safe-area-context:mergeReleaseJniLibFolders
+> Task :react-native-community_netinfo:syncReleaseLibJars
+> Task :react-native-community_netinfo:bundleReleaseLocalLintAar
+> Task :react-native-safe-area-context:mergeReleaseNativeLibs NO-SOURCE
+> Task :react-native-safe-area-context:stripReleaseDebugSymbols NO-SOURCE
+> Task :react-native-safe-area-context:copyReleaseJniLibsProjectAndLocalJars
+> Task :react-native-safe-area-context:generateReleaseResValues
+> Task :react-native-safe-area-context:extractDeepLinksForAarRelease
+> Task :react-native-safe-area-context:generateReleaseBuildConfig
+> Task :react-native-safe-area-context:generateReleaseResources
+> Task :react-native-safe-area-context:packageReleaseResources
+> Task :react-native-safe-area-context:parseReleaseLocalResources
+> Task :react-native-safe-area-context:javaPreCompileRelease
+
+> Task :react-native-safe-area-context:processReleaseManifest
+package="com.th3rdwave.safeareacontext" found in source AndroidManifest.xml: /home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-safe-area-context/android/src/main/AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="com.th3rdwave.safeareacontext" from the source AndroidManifest.xml: /home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-safe-area-context/android/src/main/AndroidManifest.xml.
+
+> Task :react-native-safe-area-context:mergeReleaseShaders
+> Task :react-native-safe-area-context:compileReleaseShaders NO-SOURCE
+> Task :react-native-safe-area-context:generateReleaseAssets UP-TO-DATE
+> Task :react-native-safe-area-context:generateReleaseRFile
+> Task :react-native-safe-area-context:packageReleaseAssets
+> Task :react-native-safe-area-context:prepareLintJarForPublish
+> Task :react-native-safe-area-context:prepareReleaseArtProfile
+> Task :react-native-screens:preBuild UP-TO-DATE
+> Task :react-native-screens:preReleaseBuild UP-TO-DATE
+> Task :react-native-safe-area-context:writeReleaseAarMetadata
+> Task :react-native-screens:mergeReleaseJniLibFolders
+> Task :react-native-screens:mergeReleaseNativeLibs NO-SOURCE
+> Task :react-native-screens:stripReleaseDebugSymbols NO-SOURCE
+> Task :react-native-screens:copyReleaseJniLibsProjectAndLocalJars
+> Task :react-native-screens:generateReleaseResValues
+> Task :react-native-screens:extractDeepLinksForAarRelease
+> Task :react-native-screens:generateReleaseBuildConfig
+> Task :react-native-screens:generateReleaseResources
+> Task :react-native-screens:packageReleaseResources
+> Task :react-native-screens:javaPreCompileRelease
+> Task :react-native-screens:parseReleaseLocalResources
+
+> Task :react-native-screens:processReleaseManifest
+package="com.swmansion.rnscreens" found in source AndroidManifest.xml: /home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-screens/android/src/main/AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="com.swmansion.rnscreens" from the source AndroidManifest.xml: /home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-screens/android/src/main/AndroidManifest.xml.
+
+> Task :react-native-screens:mergeReleaseShaders
+> Task :react-native-screens:compileReleaseShaders NO-SOURCE
+> Task :react-native-screens:generateReleaseAssets UP-TO-DATE
+> Task :react-native-screens:packageReleaseAssets
+> Task :react-native-screens:generateReleaseRFile
+> Task :react-native-screens:prepareLintJarForPublish
+> Task :react-native-screens:prepareReleaseArtProfile
+> Task :react-native-svg:preBuild UP-TO-DATE
+> Task :react-native-svg:preReleaseBuild UP-TO-DATE
+> Task :react-native-screens:writeReleaseAarMetadata
+> Task :react-native-svg:mergeReleaseJniLibFolders
+> Task :react-native-svg:mergeReleaseNativeLibs NO-SOURCE
+> Task :react-native-svg:stripReleaseDebugSymbols NO-SOURCE
+> Task :react-native-svg:generateReleaseResValues
+> Task :react-native-svg:copyReleaseJniLibsProjectAndLocalJars
+> Task :react-native-svg:extractDeepLinksForAarRelease
+> Task :react-native-svg:generateReleaseBuildConfig
+> Task :react-native-svg:generateReleaseResources
+> Task :react-native-svg:packageReleaseResources
+> Task :react-native-svg:parseReleaseLocalResources
+
+> Task :react-native-svg:processReleaseManifest
+package="com.horcrux.svg" found in source AndroidManifest.xml: /home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-svg/android/src/main/AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="com.horcrux.svg" from the source AndroidManifest.xml: /home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-svg/android/src/main/AndroidManifest.xml.
+
+> Task :react-native-svg:javaPreCompileRelease
+> Task :react-native-svg:mergeReleaseShaders
+> Task :react-native-svg:generateReleaseRFile
+> Task :react-native-svg:compileReleaseShaders NO-SOURCE
+> Task :react-native-svg:extractReleaseAnnotations
+
+> Task :react-native-svg:compileReleaseJavaWithJavac
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-svg/android/src/main/java/com/horcrux/svg/RNSVGRenderableManager.java:11: warning: [removal] StandardCharsets in com.facebook.react.common has been deprecated and marked for removal
+import static com.facebook.react.common.StandardCharsets.UTF_8;
+                                       ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning
+
+> Task :react-native-svg:mergeReleaseGeneratedProguardFiles
+> Task :react-native-svg:mergeReleaseConsumerProguardFiles
+> Task :react-native-svg:generateReleaseAssets UP-TO-DATE
+> Task :react-native-svg:packageReleaseAssets
+> Task :react-native-svg:prepareLintJarForPublish
+> Task :react-native-svg:prepareReleaseArtProfile
+> Task :react-native-svg:processReleaseJavaRes NO-SOURCE
+> Task :react-native-svg:mergeReleaseJavaResource
+> Task :react-native-svg:writeReleaseAarMetadata
+> Task :react-native-svg:syncReleaseLibJars
+> Task :react-native-svg:bundleReleaseLocalLintAar
+> Task :app:buildKotlinToolingMetadata
+> Task :app:generateCodegenSchemaFromJavaScript SKIPPED
+> Task :app:generateCodegenArtifactsFromSchema SKIPPED
+> Task :app:generatePackageList
+> Task :app:preBuild
+> Task :app:preReleaseBuild
+> Task :app:generateReleaseBuildConfig
+
+> Task :react-native-safe-area-context:compileReleaseKotlin
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-safe-area-context/android/src/main/java/com/th3rdwave/safeareacontext/SafeAreaContextModule.kt:7:46 'ReactModule' is deprecated. Deprecated in Java
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-safe-area-context/android/src/main/java/com/th3rdwave/safeareacontext/SafeAreaContextModule.kt:9:2 'ReactModule' is deprecated. Deprecated in Java
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-safe-area-context/android/src/main/java/com/th3rdwave/safeareacontext/SafeAreaContextPackage.kt:6:46 'ReactModule' is deprecated. Deprecated in Java
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-safe-area-context/android/src/main/java/com/th3rdwave/safeareacontext/SafeAreaContextPackage.kt:26:51 'ReactModule' is deprecated. Deprecated in Java
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-safe-area-context/android/src/main/java/com/th3rdwave/safeareacontext/SafeAreaContextPackage.kt:28:11 'constructor ReactModuleInfo(String!, String!, Boolean, Boolean, Boolean, Boolean, Boolean)' is deprecated. Deprecated in Java
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-safe-area-context/android/src/main/java/com/th3rdwave/safeareacontext/SafeAreaContextPackage.kt:34:27 'hasConstants: Boolean' is deprecated. Deprecated in Java
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-safe-area-context/android/src/main/java/com/th3rdwave/safeareacontext/SafeAreaProviderManager.kt:4:46 'ReactModule' is deprecated. Deprecated in Java
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-safe-area-context/android/src/main/java/com/th3rdwave/safeareacontext/SafeAreaProviderManager.kt:11:2 'ReactModule' is deprecated. Deprecated in Java
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-safe-area-context/android/src/main/java/com/th3rdwave/safeareacontext/SafeAreaView.kt:59:23 'getter for uiImplementation: UIImplementation!' is deprecated. Deprecated in Java
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-safe-area-context/android/src/main/java/com/th3rdwave/safeareacontext/SafeAreaViewManager.kt:4:46 'ReactModule' is deprecated. Deprecated in Java
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-safe-area-context/android/src/main/java/com/th3rdwave/safeareacontext/SafeAreaViewManager.kt:14:2 'ReactModule' is deprecated. Deprecated in Java
+
+> Task :app:checkReleaseAarMetadata
+> Task :react-native-safe-area-context:extractReleaseAnnotations
+
+> Task :react-native-safe-area-context:compileReleaseJavaWithJavac
+Note: /home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-safe-area-context/android/src/paper/java/com/th3rdwave/safeareacontext/NativeSafeAreaContextSpec.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :react-native-safe-area-context:mergeReleaseGeneratedProguardFiles
+> Task :react-native-safe-area-context:mergeReleaseConsumerProguardFiles
+> Task :react-native-safe-area-context:processReleaseJavaRes
+> Task :react-native-safe-area-context:mergeReleaseJavaResource
+
+> Task :react-native-screens:compileReleaseKotlin
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenContainerViewManager.kt:5:46 'ReactModule' is deprecated. Deprecated in Java
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenContainerViewManager.kt:10:2 'ReactModule' is deprecated. Deprecated in Java
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStackFragment.kt:65:28 'setter for targetElevation: Float' is deprecated. Deprecated in Java
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStackFragment.kt:128:28 'setter for targetElevation: Float' is deprecated. Deprecated in Java
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStackHeaderConfig.kt:86:34 'getter for systemWindowInsetTop: Int' is deprecated. Deprecated in Java
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStackHeaderConfig.kt:229:37 'setColorFilter(Int, PorterDuff.Mode): Unit' is deprecated. Deprecated in Java
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStackHeaderConfigViewManager.kt:7:46 'ReactModule' is deprecated. Deprecated in Java
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStackHeaderConfigViewManager.kt:18:2 'ReactModule' is deprecated. Deprecated in Java
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStackHeaderSubviewManager.kt:4:46 'ReactModule' is deprecated. Deprecated in Java
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStackHeaderSubviewManager.kt:12:2 'ReactModule' is deprecated. Deprecated in Java
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStackViewManager.kt:6:46 'ReactModule' is deprecated. Deprecated in Java
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStackViewManager.kt:15:2 'ReactModule' is deprecated. Deprecated in Java
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenViewManager.kt:6:46 'ReactModule' is deprecated. Deprecated in Java
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenViewManager.kt:24:2 'ReactModule' is deprecated. Deprecated in Java
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenViewManager.kt:47:42 'setStateWrapper(StateWrapper!): Unit' is deprecated. Deprecated in Java
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenWindowTraits.kt:137:47 'replaceSystemWindowInsets(Int, Int, Int, Int): WindowInsetsCompat' is deprecated. Deprecated in Java
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenWindowTraits.kt:138:51 'getter for systemWindowInsetLeft: Int' is deprecated. Deprecated in Java
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenWindowTraits.kt:140:51 'getter for systemWindowInsetRight: Int' is deprecated. Deprecated in Java
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenWindowTraits.kt:141:51 'getter for systemWindowInsetBottom: Int' is deprecated. Deprecated in Java
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/SearchBarManager.kt:6:46 'ReactModule' is deprecated. Deprecated in Java
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/SearchBarManager.kt:17:2 'ReactModule' is deprecated. Deprecated in Java
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/SearchBarManager.kt:100:22 Parameter 'view' is never used
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/SearchBarManager.kt:100:43 Parameter 'placeholder' is never used
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/SearchBarView.kt:147:43 Parameter 'flag' is never used
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/events/HeaderHeightChangeEvent.kt:5:44 'RCTEventEmitter' is deprecated. Deprecated in Java
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/events/HeaderHeightChangeEvent.kt:10:5 'constructor Event<T : Event<(raw) Event<*>>!>(Int)' is deprecated. Deprecated in Java
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/events/HeaderHeightChangeEvent.kt:17:44 'RCTEventEmitter' is deprecated. Deprecated in Java
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/events/HeaderHeightChangeEvent.kt:20:25 'receiveEvent(Int, String!, WritableMap?): Unit' is deprecated. Deprecated in Java
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-screens/android/src/paper/java/com/swmansion/rnscreens/FabricEnabledViewGroup.kt:5:37 'FabricViewStateManager' is deprecated. Deprecated in Java
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-screens/android/src/paper/java/com/swmansion/rnscreens/FabricEnabledViewGroup.kt:9:48 'FabricViewStateManager' is deprecated. Deprecated in Java
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-screens/android/src/paper/java/com/swmansion/rnscreens/FabricEnabledViewGroup.kt:11:42 Parameter 'width' is never used
+w: file:///home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/node_modules/react-native-screens/android/src/paper/java/com/swmansion/rnscreens/FabricEnabledViewGroup.kt:11:54 Parameter 'height' is never used
+
+> Task :app:createBundleReleaseJsAndAssets
+debug Reading Metro config from /home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/metro.config.js
+warning: the transform cache was reset.
+                Welcome to Metro v0.80.12
+              Fast - Scalable - Integrated
+
+
+info Writing bundle output to: /home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle
+info Writing sourcemap output to: /home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/intermediates/sourcemaps/react/release/index.android.bundle.packager.map
+info Done writing bundle output
+info Done writing sourcemap output
+info Copying 6 asset files
+info Done copying assets
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle:2511:18: warning: the variable "DebuggerInternal" was not declared in function "__shouldPauseOnThrow"
+          typeof DebuggerInternal !== 'undefined' &&
+                 ^~~~~~~~~~~~~~~~
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle:6165:7: warning: the variable "setTimeout" was not declared in function "logCapturedError"
+      setTimeout(function () {
+      ^~~~~~~~~~
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle:4134:108: warning: the variable "nativeFabricUIManager" was not declared in function "onChange"
+...lInstanceHandle ? (from && nativeFabricUIManager.setIsJSResponder(from.sta...
+                              ^~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle:4746:21: warning: the variable "clearTimeout" was not declared in anonymous function " 118#"
+    cancelTimeout = clearTimeout;
+                    ^~~~~~~~~~~~
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle:8496:30: warning: the variable "__REACT_DEVTOOLS_GLOBAL_HOOK__" was not declared in anonymous function " 118#"
+  if ("undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__) {
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle:10857:5: warning: the variable "setImmediate" was not declared in function "handleResolved"
+    setImmediate(function () {
+    ^~~~~~~~~~~~
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle:15132:12: warning: the variable "fetch" was not declared in anonymous function " 358#"
+    fetch: fetch,
+           ^~~~~
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle:15133:14: warning: the variable "Headers" was not declared in anonymous function " 358#"
+    Headers: Headers,
+             ^~~~~~~
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle:15134:14: warning: the variable "Request" was not declared in anonymous function " 358#"
+    Request: Request,
+             ^~~~~~~
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle:15135:15: warning: the variable "Response" was not declared in anonymous function " 358#"
+    Response: Response
+              ^~~~~~~~
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle:15292:24: warning: the variable "FileReader" was not declared in function "readBlobAsArrayBuffer"
+      var reader = new FileReader();
+                       ^~~~~~~~~~
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle:15343:36: warning: the variable "Blob" was not declared in anonymous function " 369#"
+        } else if (support.blob && Blob.prototype.isPrototypeOf(body)) {
+                                   ^~~~
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle:15345:40: warning: the variable "FormData" was not declared in anonymous function " 369#"
+        } else if (support.formData && FormData.prototype.isPrototypeOf(body)) {
+                                       ^~~~~~~~
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle:15347:44: warning: the variable "URLSearchParams" was not declared in anonymous function " 369#"
+...e if (support.searchParams && URLSearchParams.prototype.isPrototypeOf(body...
+                                 ^~~~~~~~~~~~~~~
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle:15466:26: warning: the variable "AbortController" was not declared in anonymous function " 375#"
+          var ctrl = new AbortController();
+                         ^~~~~~~~~~~~~~~
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle:15600:23: warning: the variable "XMLHttpRequest" was not declared in anonymous function " 379#"
+        var xhr = new XMLHttpRequest();
+                      ^~~~~~~~~~~~~~
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle:15145:71: warning: the variable "self" was not declared in anonymous function " 361#"
+...undefined' && globalThis || typeof self !== 'undefined' && self ||
+                                      ^~~~
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle:25682:27: warning: the variable "performance" was not declared in anonymous function " 683#"
+  if ("object" === typeof performance && "function" === typeof performance.no...
+                          ^~~~~~~~~~~
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle:25705:26: warning: the variable "navigator" was not declared in anonymous function " 683#"
+  "undefined" !== typeof navigator && undefined !== navigator.scheduling && u...
+                         ^~~~~~~~~
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle:25815:37: warning: the variable "MessageChannel" was not declared in anonymous function " 683#"
+  };else if ("undefined" !== typeof MessageChannel) {
+                                    ^~~~~~~~~~~~~~
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle:25830:34: warning: the variable "nativeRuntimeScheduler" was not declared in anonymous function " 683#"
+... = "undefined" !== typeof nativeRuntimeScheduler ? nativeRuntimeScheduler....
+                             ^~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle:35111:34: warning: the variable "requestAnimationFrame" was not declared in function "start 9#"
+...    this._animationFrame = requestAnimationFrame(this.onUpdate.bind(this));
+                              ^~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle:59497:16: warning: the variable "crypto" was not declared in function "generatePKCEVerifier"
+    if (typeof crypto === 'undefined') {
+               ^~~~~~
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle:59514:25: warning: the variable "TextEncoder" was not declared in function "?anon_0_ 37#"
+      var encoder = new TextEncoder();
+                        ^~~~~~~~~~~
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle:59535:14: warning: the variable "btoa" was not declared in function "?anon_0_ 38#"
+      return btoa(hashed).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+...
+             ^~~~
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle:62605:115: warning: the variable "TextDecoder" was not declared in function "?anon_0_ 66#"
+...utToProcess.signedMessage : new TextDecoder().decode(outputToProcess.signe...
+                                   ^~~~~~~~~~~
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle:66297:24: warning: the variable "setInterval" was not declared in function "?anon_0_ 133#"
+          var ticker = setInterval(function () {
+                       ^~~~~~~~~~~
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle:66350:13: warning: the variable "clearInterval" was not declared in function "?anon_0_ 135#"
+            clearInterval(ticker);
+            ^~~~~~~~~~~~~
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle:68668:7: warning: the variable "__magic__" was not declared in function "polyfillGlobalThis"
+      __magic__.globalThis = __magic__;
+      ^~~~~~~~~
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle:68795:16: warning: the variable "PublicKeyCredential" was not declared in function "deserializeCredentialCreationOptions"
+    if (typeof PublicKeyCredential !== 'undefined' && 'parseCreationOptionsFr...
+               ^~~~~~~~~~~~~~~~~~~
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle:69676:37: warning: the variable "AbortSignal" was not declared in function "identifyRegistrationError"
+      if (options.signal instanceof AbortSignal) {
+                                    ^~~~~~~~~~~
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle:75533:27: warning: the variable "ReadableStream" was not declared in function "?anon_0_ 228#"
+              if ((typeof ReadableStream !== "undefined" && body instanceof R...
+                          ^~~~~~~~~~~~~~
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle:76714:20: warning: the variable "Buffer" was not declared in function "toBase64"
+        if (typeof Buffer !== "undefined") return Buffer.from(data).toString(...
+                   ^~~~~~
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle:81187:30: warning: the variable "Worker" was not declared in function "_startWorkerHeartbeat"
+        this.workerRef = new Worker(objectUrl);
+                             ^~~~~~
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle:81335:20: warning: the variable "WebSocket" was not declared in function "detectEnvironment"
+        if (typeof WebSocket !== 'undefined') {
+                   ^~~~~~~~~
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle:83630:26: warning: the variable "atob" was not declared in function "_LongPoll"
+        this.authToken = atob(protocols[1].slice(AUTH_TOKEN_PREFIX.length));
+                         ^~~~
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle:83806:20: warning: the variable "CloseEvent" was not declared in function "close 3#"
+        if (typeof CloseEvent !== "undefined") {
+                   ^~~~~~~~~~
+/home/runner/work/shree-jee-kirana/shree-jee-kirana/mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle:84446:16: warning: the variable "location" was not declared in function "protocol"
+        return location.protocol.match(/^https/) ? "wss" : "ws";
+               ^~~~~~~~
+
+> Task :react-native-safe-area-context:syncReleaseLibJars
+> Task :react-native-safe-area-context:bundleReleaseLocalLintAar
+> Task :react-native-screens:extractReleaseAnnotations
+> Task :react-native-screens:compileReleaseJavaWithJavac
+> Task :react-native-screens:mergeReleaseGeneratedProguardFiles
+> Task :react-native-screens:mergeReleaseConsumerProguardFiles
+> Task :react-native-screens:processReleaseJavaRes
+> Task :react-native-screens:mergeReleaseJavaResource
+> Task :app:generateReleaseResValues
+> Task :react-native-screens:syncReleaseLibJars
+> Task :react-native-screens:bundleReleaseLocalLintAar
+> Task :app:mapReleaseSourceSetPaths
+> Task :app:generateReleaseResources
+> Task :app:packageReleaseResources
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease
+> Task :react-native-async-storage_async-storage:extractDeepLinksRelease
+> Task :react-native-community_netinfo:extractDeepLinksRelease
+> Task :react-native-safe-area-context:extractDeepLinksRelease
+> Task :react-native-screens:extractDeepLinksRelease
+> Task :react-native-svg:extractDeepLinksRelease
+> Task :app:parseReleaseLocalResources
+> Task :app:mergeReleaseResources
+> Task :app:processReleaseMainManifest
+> Task :app:processReleaseManifest
+> Task :react-native-async-storage_async-storage:compileReleaseLibraryResources
+> Task :react-native-community_netinfo:compileReleaseLibraryResources
+> Task :react-native-safe-area-context:compileReleaseLibraryResources
+> Task :react-native-svg:compileReleaseLibraryResources
+> Task :react-native-screens:compileReleaseLibraryResources
+> Task :react-native-async-storage_async-storage:bundleLibCompileToJarRelease
+> Task :react-native-community_netinfo:bundleLibCompileToJarRelease
+> Task :react-native-safe-area-context:bundleLibCompileToJarRelease
+> Task :app:processReleaseManifestForPackage
+> Task :react-native-screens:bundleLibCompileToJarRelease
+> Task :app:javaPreCompileRelease
+> Task :app:extractProguardFiles
+> Task :react-native-async-storage_async-storage:bundleLibRuntimeToJarRelease
+> Task :react-native-async-storage_async-storage:writeReleaseLintModelMetadata
+> Task :react-native-svg:bundleLibCompileToJarRelease
+> Task :react-native-async-storage_async-storage:createFullJarRelease
+> Task :react-native-community_netinfo:writeReleaseLintModelMetadata
+> Task :react-native-community_netinfo:bundleLibRuntimeToJarRelease
+> Task :react-native-safe-area-context:bundleLibRuntimeToJarRelease
+> Task :react-native-community_netinfo:createFullJarRelease
+> Task :react-native-safe-area-context:createFullJarRelease
+> Task :react-native-safe-area-context:writeReleaseLintModelMetadata
+> Task :react-native-screens:bundleLibRuntimeToJarRelease
+> Task :react-native-screens:createFullJarRelease
+> Task :react-native-screens:writeReleaseLintModelMetadata
+> Task :react-native-svg:bundleLibRuntimeToJarRelease
+> Task :react-native-svg:createFullJarRelease
+> Task :react-native-svg:writeReleaseLintModelMetadata
+> Task :app:mergeReleaseJniLibFolders
+> Task :react-native-async-storage_async-storage:copyReleaseJniLibsProjectOnly
+> Task :react-native-community_netinfo:copyReleaseJniLibsProjectOnly
+> Task :react-native-safe-area-context:copyReleaseJniLibsProjectOnly
+> Task :react-native-screens:copyReleaseJniLibsProjectOnly
+> Task :react-native-svg:copyReleaseJniLibsProjectOnly
+> Task :app:mergeReleaseNativeLibs
+> Task :app:processReleaseResources
+
+> Task :app:stripReleaseDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libc++_shared.so, libfabricjni.so, libfb.so, libfbjni.so, libfolly_runtime.so, libglog.so, libglog_init.so, libhermes.so, libhermes_executor.so, libhermesinstancejni.so, libimagepipeline.so, libjscinstance.so, libjserrorhandler.so, libjsi.so, libjsijniprofiler.so, libjsinspector.so, liblogger.so, libmapbufferjni.so, libnative-filters.so, libnative-imagetranscoder.so, libreact_codegen_rncore.so, libreact_config.so, libreact_debug.so, libreact_nativemodule_core.so, libreact_newarchdefaults.so, libreact_render_animations.so, libreact_render_attributedstring.so, libreact_render_componentregistry.so, libreact_render_core.so, libreact_render_debug.so, libreact_render_graphics.so, libreact_render_imagemanager.so, libreact_render_leakchecker.so, libreact_render_mapbuffer.so, libreact_render_mounting.so, libreact_render_runtimescheduler.so, libreact_render_scheduler.so, libreact_render_telemetry.so, libreact_render_templateprocessor.so, libreact_render_textlayoutmanager.so, libreact_render_uimanager.so, libreact_utils.so, libreactnativeblob.so, libreactnativejni.so, libreactperfloggerjni.so, librninstance.so, librrc_image.so, librrc_legacyviewmanagerinterop.so, librrc_native.so, librrc_root.so, librrc_scrollview.so, librrc_text.so, librrc_textinput.so, librrc_unimplementedview.so, librrc_view.so, libruntimeexecutor.so, libturbomodulejsijni.so, libuimanagerjni.so, libyoga.so.
+
+> Task :app:compileReleaseKotlin
+> Task :app:compileReleaseJavaWithJavac
+> Task :app:extractReleaseNativeSymbolTables
+> Task :app:mergeReleaseNativeDebugMetadata NO-SOURCE
+> Task :app:checkReleaseDuplicateClasses
+> Task :app:dexBuilderRelease
+> Task :app:desugarReleaseFileDependencies
+> Task :app:lintVitalAnalyzeRelease
+> Task :app:mergeExtDexRelease
+> Task :app:lintVitalReportRelease
+> Task :app:lintVitalRelease
+> Task :app:mergeReleaseArtProfile
+> Task :app:mergeReleaseShaders
+> Task :app:mergeReleaseGlobalSynthetics
+> Task :app:compileReleaseShaders NO-SOURCE
+> Task :app:generateReleaseAssets UP-TO-DATE
+> Task :app:mergeReleaseAssets
+> Task :app:processReleaseJavaRes
+> Task :app:compressReleaseAssets
+> Task :app:collectReleaseDependencies
+> Task :app:sdkReleaseDependencyData
+> Task :app:validateSigningRelease
+> Task :app:writeReleaseAppMetadata
+> Task :app:writeReleaseSigningConfigVersions
+> Task :react-native-async-storage_async-storage:bundleReleaseAar
+> Task :app:mergeReleaseJavaResource
+> Task :react-native-async-storage_async-storage:mapReleaseSourceSetPaths
+> Task :react-native-async-storage_async-storage:mergeReleaseResources
+> Task :app:optimizeReleaseResources
+> Task :react-native-community_netinfo:bundleReleaseAar
+> Task :react-native-community_netinfo:mapReleaseSourceSetPaths
+> Task :react-native-community_netinfo:mergeReleaseResources
+> Task :react-native-safe-area-context:bundleReleaseAar
+> Task :react-native-safe-area-context:mapReleaseSourceSetPaths
+> Task :react-native-async-storage_async-storage:verifyReleaseResources
+> Task :react-native-safe-area-context:mergeReleaseResources
+> Task :react-native-async-storage_async-storage:assembleRelease
+> Task :react-native-screens:bundleReleaseAar
+> Task :react-native-screens:mapReleaseSourceSetPaths
+> Task :react-native-community_netinfo:verifyReleaseResources
+> Task :react-native-safe-area-context:verifyReleaseResources
+> Task :react-native-screens:mergeReleaseResources
+> Task :react-native-community_netinfo:assembleRelease
+> Task :react-native-safe-area-context:assembleRelease
+> Task :react-native-svg:bundleReleaseAar
+> Task :react-native-svg:mapReleaseSourceSetPaths
+> Task :react-native-svg:mergeReleaseResources
+> Task :react-native-screens:verifyReleaseResources
+> Task :react-native-screens:assembleRelease
+> Task :react-native-svg:verifyReleaseResources
+> Task :react-native-svg:assembleRelease
+> Task :app:mergeDexRelease
+> Task :app:compileReleaseArtProfile
+> Task :app:packageRelease
+> Task :app:createReleaseApkListingFileRedirect
+> Task :app:assembleRelease
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 4m 7s
+222 actionable tasks: 222 executed
